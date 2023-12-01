@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedados no meu próprio servidor.</p>
+    <video src="media/vdeoid_3894045540p.mp4" width="300" controls></video>
+    <br>
+    <video width="300" controls>
+        <source src="media/vdeoid_3894045540p.mp4" type="video/mp4">
+        <source src="media/videojoseph-redfield720p.webm" type="video/webm">
+        <p>
+            Seu navegador não suporta o elemento <code>video</code>.
+            Por favor, atualize seu navegador.
+        </p>
+    </video>
+    <br>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t3WZIL_VwYg?si=HP8xM8Dy5B9LChoC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

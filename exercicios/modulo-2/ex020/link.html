@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+            /* # = id
+            . = class
+            : = pseudo-classe
+            :: = pseudo-elemento
+            > = filho direto */
+            
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:active {
+            color: yellow;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a::after {
+            content: " (link externo)";
+            font-size: 0.8em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/maykonrenam" target="_blank" rel="external">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/@maykonrenam" target="_blank" rel="external">Canal do YouTube</a></li>
+        <li><a href="https://www.instagram.com/maykonrenam/" target="_blank" rel="external">Perfil no Instagram</a></li>
+    </ul>
+</body>
+</html>
